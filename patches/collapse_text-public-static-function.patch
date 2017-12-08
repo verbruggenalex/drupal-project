@@ -1,0 +1,26 @@
+From 85656e4960d22fc145d5c3e3a79b81eaeb4cbde5 Mon Sep 17 00:00:00 2001
+From: DYdave
+Date: Tue, 12 May 2015 11:07:20 +0800
+Subject: Issue #2487115 by DYdave: Fixed E_STRICT warning message emitted by
+ SimpleTests.
+
+---
+ collapse_text.test | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/collapse_text.test b/collapse_text.test
+index 8fccd2f..237a004 100644
+--- a/collapse_text.test
++++ b/collapse_text.test
+@@ -14,7 +14,7 @@ class CollapseTextTestCase extends DrupalUnitTestCase {
+  * - test non-ascii titles
+  */
+   
+-  function getInfo () {
++  public static function getInfo () {
+     return array(
+       'name'        => t('Collapse Text tests'),
+       'description' => t('Tests for the Collapse Text module.'),
+-- 
+cgit v1.1
+
